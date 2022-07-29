@@ -32,4 +32,7 @@ add copy to rightclick
 --
 dbojan.github.io
 
+Who is Esmeralda?
+https://disneyheroines.fandom.com/wiki/Esmeralda
+
 ```
