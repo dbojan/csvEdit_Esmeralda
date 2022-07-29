@@ -7,7 +7,7 @@
 Program for editing csv/tsv files on windows.
 BSD licence, free for use.
 
-Installing: click on zip file, then on download on the right. Extract zip file, run. You cann associate it with csv and tsv files.
+Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv and tsv files.
 
 Made in vb.net (profile4), using sharpdevelop v.4.4
 
