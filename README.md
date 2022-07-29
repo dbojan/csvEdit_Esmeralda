@@ -29,8 +29,6 @@ todo:
 export to xml 2003 spreadsheet.
 add copy to rightclick
 
-
-
 --
 dbojan.github.io
 
