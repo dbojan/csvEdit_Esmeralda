@@ -1,6 +1,7 @@
 # csvEdit Esmeralda
 ```
-	Dim stProgramAndVersion As String ="csvEdit Esmeralda, v0.91"
+
+	Dim stProgramAndVersion As String ="csvEdit Esmeralda, v0.91b"
 	Dim stWebSite As String = "dbojan.github.io"
 
 
@@ -9,7 +10,7 @@ BSD licence, free for use.
 
 Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv and tsv files.
 
-Made in vb.net (profile4), using sharpdevelop v.4.4
+Made in VB.net (profile4), using Sharpdevelop v.4.4
 
 To remove row:
  -select one or more cells in the row you wish to remove
@@ -24,6 +25,11 @@ Program supports utf8 in content.
 
 If not set, default delimiter is tab.
 If tsv selected as format type, delimiter is tab.
+
+-changes in v0.91b
+ bugfixes
+ add option to change delimiter. tab ; | , are recognized.
+
 
 todo:
 export to xml 2003 spreadsheet.
