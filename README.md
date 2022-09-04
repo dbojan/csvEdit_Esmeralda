@@ -8,7 +8,11 @@
 Program for editing csv/tsv files on windows.
 BSD licence, free for use.
 
-Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv and tsv files.
+Installing: click on zip file, then on download on the right. Extract zip file, run. 
+You can set windows to use this program to open CSV and TSV files.
+
+(Right click on CSV, "open with", "choose another app", "always use this app".
+Select CSVedit.exe as app.)
 
 Made in VB.net (profile4), using Sharpdevelop v.4.4
 
