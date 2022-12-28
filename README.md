@@ -1,18 +1,15 @@
 # csvEdit Esmeralda
 ```
 
-	Dim stProgramAndVersion As String ="csvEdit Esmeralda, v0.91b"
+	Dim stProgramAndVersion As String ="csvEdit Esmeralda, v2022-12-24-1"
 	Dim stWebSite As String = "dbojan.github.io"
 
 
 Program for editing csv/tsv files on windows.
 BSD licence, free for use.
 
-Installing: click on zip file, then on download on the right. Extract zip file, run. 
-You can set windows to use this program to open CSV and TSV files.
-
-(Right click on CSV, "open with", "choose another app", "always use this app".
-Select CSVedit.exe as app.)
+Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv 
+and tsv files.
 
 Made in VB.net (profile4), using Sharpdevelop v.4.4
 
@@ -34,15 +31,16 @@ If tsv selected as format type, delimiter is tab.
  bugfixes
  add option to change delimiter. tab ; | , are recognized.
 
-
-todo:
-export to xml 2003 spreadsheet.
-add copy to rightclick
+-changes in v2022-12-24-1
+ -export to xml (Microsoft Office Excel 2003 SpreadsheetML XML). Libre Office Calc cannot open XML file properly, 
+  if there is & in any cell. (Bug). Excel can open it.
+ -copy
+ -paste in selected cells
+ -reworked saving part
+ -using double buffering for faster scrolling
 
 --
 dbojan.github.io
 
 Who is Esmeralda?
 https://disneyheroines.fandom.com/wiki/Esmeralda
-
-```
