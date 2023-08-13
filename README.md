@@ -1,18 +1,15 @@
-# csvEdit Esmeralda
 ```
-csv edit v2023-08-06-1 beta
+csv edit v2023-08-06-1
+beta
 
 BSD licence, free for use.
 
 Program for editing csv/tsv/m3u files on Windows.
-can also export to xml (Microsoft SpreadsheetML 2003)
+can also export to xml (Microsoft SpreadsheetML 2003) beta
 suports command line conversion (see below)
 
-Does not import xml files.
-
-
-import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003) (beta), folder, folder with m3u files
-export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003) (beta), folder folder with m3u files
+import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003) (beta), folder with m3u files
+export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003) (beta), folder with m3u files
 
 
 Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv and tsv files.
@@ -138,6 +135,8 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
  m3u menu, for playing urls. edit play.bat in program folder first.
  creating of (m3u) filelist by drag and drop multiple files
 
+-changes v2023-08-06-1
+minor changes
 
 --
 dbojan.github.io
