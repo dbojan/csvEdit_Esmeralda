@@ -1,5 +1,6 @@
+## csv edit v2023-08-15-1
+
 ```
-csv edit v2023-08-06-1
 beta
 
 BSD licence, free for use.
@@ -13,7 +14,10 @@ export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003) (beta), folder w
 
 
 Installing: click on zip file, then on download on the right. Extract zip file, run. You can associate it with csv and tsv files.
-settings are in the settings.txt 
+settings are in the settings.txt in format:
+mpv=
+d:/apps/mpv/mpv.exe
+
 Edit if needed to change mpv and ffprobe location.
 play.bat is started when single testing channels. Double click on cell or press f1
 
@@ -137,6 +141,17 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 
 -changes v2023-08-06-1
 minor changes
+
+-changes in v2023-08-14-1
+ search (filter) added. to remove filter, either press ctrl and click on search.
+ Or enter empty search item and click on search, or use menu to remove markings.
+ You can disable sorting on search results using edit menu.
+ (making rows non-visible in 10k rows is slow, so changing background color+sort was used instead)
+
+-changes in v2023-08-15-1
+ fixed shennanigans with settings.txt. Program adds d:/apps/mpv/mpv.exe and d:/ffmpeg/ffprobe.exe as defaults,
+ if they exist. If settings.txt exist, it loads new values from it. If programs do not exist on neither locations
+ csvedit will warn you when you try to play url, or check links.
 
 --
 dbojan.github.io
