@@ -1,4 +1,4 @@
-## csv edit v2023-08-15-1
+## csv edit v2023-08-16-1
 
 ```
 beta
@@ -143,8 +143,8 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 minor changes
 
 -changes in v2023-08-14-1
- search (filter) added. to remove filter, either press ctrl and click on search.
- Or enter empty search item and click on search, or use menu to remove markings.
+ search (filter) added. to remove filter, either press ctrl and click on search,
+ or enter empty search item and click on search, or use menu to remove markings.
  You can disable sorting on search results using edit menu.
  (making rows non-visible in 10k rows is slow, so changing background color+sort was used instead)
 
@@ -153,5 +153,10 @@ minor changes
  if they exist. If settings.txt exist, it loads new values from it. If programs do not exist on neither locations
  csvedit will warn you when you try to play url, or check links.
 
+-changes in v2023-08-16-1
+ to disable search sort, hold shift and click on search.
+ if you hold shift, when drag and drop new file on program window, it will open in another (new) window
+ added 'open in new window' in 'file' menu
+ 
 --
 dbojan.github.io
