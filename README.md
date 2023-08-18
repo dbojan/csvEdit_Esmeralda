@@ -52,9 +52,7 @@ all this will work, if the header title is not "Columnxx"
 
 Automatic detection of tags in m3u should work :)
 
-
-
-Creating of (m3u) filelist by drag and drop multiple files
+Creating of (m3u) filelist by drag and drop multiple files:
 drag and drop multiple (multimedia) files on the program, new m3u filelist will be created
 if you hold control, program will ask you for group title. By default this is VOD-LOCAL
 if you hold shift, regular file list will be created
@@ -62,11 +60,7 @@ Note: if you have already new list open, hold shift/ctrl after clicking "yes" or
 on asking to save file. Or just close list first (Menu: File/Close)
 
 
-
-
-
-
-XML
+XML:
 Libre Office Calc has problems displaying XML files with "&" character.
 Excel opens them fine.
 If you need to use XML in Libre Office Calc, remove & from XML file, using Notepad or Notepad++,
@@ -105,12 +99,9 @@ files will be always saved to LETTER FIRST, then series:
 singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
 
-
-
 can also convert path to m3u list (for example to create mp3 files playlist):
 url is path to file on the disk, name is filename without extension.
 start "" /wait csvEdit.exe d:\media\music    1.m3u
-
 
 
 Editing all kind of tables:
