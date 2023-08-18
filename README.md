@@ -158,7 +158,7 @@ minor changes
  if you hold shift, when drag and drop new file on program window, it will open in another (new) window
  added 'open in new window' in 'file' menu
  
--changes in v2023-08-16-1
+-changes in v2023-08-18-1
  minor changes in text messages,
 
 --
