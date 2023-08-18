@@ -1,4 +1,4 @@
-## csv edit v2023-08-18-1
+## csv edit v2023-08-18-2
 
 ```
 beta
@@ -160,6 +160,9 @@ minor changes
  
 -changes in v2023-08-18-1
  minor changes in text messages,
+
+-changes in v2023-08-18-2
+ added timestamp to results in check links column.
 
 --
 dbojan.github.io
