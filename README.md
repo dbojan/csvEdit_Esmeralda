@@ -5,7 +5,7 @@ beta
 
 BSD licence, free for use.
 
-Program for editing csv/tsv/m3u files on Windows.
+Program for editing csv/tsv/m3u (playlist) files on Windows.
 can also export to xml (Microsoft SpreadsheetML 2003) beta
 suports command line conversion (see below)
 
