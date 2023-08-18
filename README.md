@@ -133,7 +133,7 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 
 -changes in 2023-08-06-1
  -changed file saving to File.WriteAllText from My.Computer.FileSystem.WriteAllText , 
-  so text is utf8, not utf8-bom
+  so text is saved in utf8, not utf8-bom
  -changed add row numbers to add channel numbers
 
 
@@ -158,20 +158,20 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 
 -changes in v2023-08-14-1
  -search (filter) added. to remove filter, either press ctrl and click on search,
-   or enter empty search item and click on search, or use menu to remove markings.
+  or enter empty search item and click on search, or use menu to remove markings.
  -You can disable sorting on search results using edit menu.
-   (making rows non-visible in 10k rows is slow, so changing background color+sort was used instead)
+  (making rows non-visible in 10k rows is slow, so changing background color+sort was used instead)
 
 -changes in v2023-08-15-1
  -fixed shennanigans with settings.txt. Program adds d:/apps/mpv/mpv.exe and d:/ffmpeg/ffprobe.exe 
-   as defaults, if they exist. If settings.txt exist, it loads new values from it. 
+  as defaults, if they exist. If settings.txt exist, it loads new values from it. 
  -If programs do not exist on neither locations, csvedit will warn you when you try to play url, 
-   or check links.
+  or check links.
 
 -changes in v2023-08-16-1
  -to disable search sort, hold shift and click on search.
  -if you hold shift, when drag and drop new file on program window, 
-   it will open in another (new) window
+  it will open in another (new) window
  -added 'open in new window' in 'file' menu
  
 -changes in v2023-08-18-1
