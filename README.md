@@ -13,7 +13,8 @@ import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003) (beta), folder w
 export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003) (beta), folder with m3u files
 
 
-Installing: click on zip file, then on download on the right. Extract zip file, run. 
+Installing: right click [here](https://github.com/dbojan/csvEdit_Esmeralda/blob/main/csvEdit.zip), select "Save Link As".
+Select save location. Extract zip file, run. 
 You can associate it with csv and tsv files.
 
 Settings are in the settings.txt in format:
