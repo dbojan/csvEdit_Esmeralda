@@ -172,8 +172,8 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
  -added timestamp to results in check links column.
 
 -changes in v2023-08-27-1
- -added option to turn of user agent in edit menu for m3u play and check
- 'mpv' for play, 'ffprobe' for testing links.
+ -added option to turn of user agent in edit menu for m3u 'play' and 'check' functions
+ 'mpv' is used for play, 'ffprobe' is used for testing links.
  -added verification for cell values (quotes and such), on save for m3u format.
  -replaced vbNewLine and vbCrLf and with Environment.NewLine in code
 
