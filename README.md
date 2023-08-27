@@ -184,6 +184,9 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
   it is not recommended to disable this.
  -added default value for changing column name (and header text), it is the same as the current column name.
 
+-changes in v2023-08-27-2
+ -added option to disable 'double click cell to play URL in m3u list' in edit menu
+
 
 --
 dbojan.github.io
