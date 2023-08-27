@@ -188,7 +188,7 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
  -added option to disable 'double click cell to play URL in m3u list' in edit menu
 
 -changes in v2023-08-27-3
- changed verification for EXTINF: field.
+ changed verification for #EXTINF: field.
 
 
 --
