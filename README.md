@@ -1,4 +1,4 @@
-## csv edit v2023-08-27-1
+## csv edit v2023-08-27-2
 <code> <pre> 
 beta
 
@@ -176,6 +176,11 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
  'mpv' is used for play, 'ffprobe' is used for testing links.
  -added verification for cell values (quotes and such), on save for m3u format.
  -replaced vbNewLine and vbCrLf and with Environment.NewLine in code
+
+-changes in v2023-08-27-1
+ -added option to disable 'verification for cell values (quotes and such), on save for m3u format', from edit menu.
+  it is not recommended to disable this.
+
 
 --
 dbojan.github.io
