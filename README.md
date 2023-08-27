@@ -59,6 +59,8 @@ if you hold shift, regular file list will be created
 Note: if you have already new list open, hold shift/ctrl after clicking "yes" or "no"
 on asking to save file. Or just close list first (Menu: File/Close)
 
+To save an empty m3u list, set column names as you want, and add at least one row using
+'Modify' menu. Click on 'File/Save As' or 'File/Save'.
 
 XML:
 Libre Office Calc has problems displaying XML files with "&" character.
@@ -180,6 +182,7 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 -changes in v2023-08-27-1
  -added option to disable 'verification for cell values (quotes and such), on save for m3u format', from edit menu.
   it is not recommended to disable this.
+ -added default value for changing column name (and header text), it is the same as the current column name.
 
 
 --
