@@ -188,7 +188,7 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 -changes in v2023-09-15-1
  added option to replace special character when converting to and from xml (default: on) :
- &lt; represents "<"; &gt; represents ">"; &amp; represents "&"; &apos; represents "'"; &quot; represents '"'
+ `&lt; represents "<"; &gt; represents ">"; &amp; represents "&"; &apos; represents "'"; &quot; represents '"' `
 
 
 
