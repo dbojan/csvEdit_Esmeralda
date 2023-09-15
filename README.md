@@ -1,4 +1,4 @@
-## csv edit v2023-08-27-3
+## csv edit v2023-09-15-1
 <code> <pre> 
 beta
 
@@ -8,8 +8,8 @@ Program for editing csv/tsv/m3u (playlist) files on Windows.
 can also export to xml (Microsoft SpreadsheetML 2003) beta
 suports command line conversion (see below)
 
-import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003) (beta), folder with m3u files
-export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003) (beta), folder with m3u files
+import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003), folder with m3u files
+export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003), folder with m3u files
 
 
 Installing: right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.zip), select "Save Link As".
@@ -63,10 +63,6 @@ To save an empty m3u list, set column names as you want, and add at least one ro
 'Modify' menu. Click on 'File/Save As' or 'File/Save'.
 
 XML:
-Libre Office Calc has problems displaying XML files with "&" character.
-Excel opens them fine.
-If you need to use XML in Libre Office Calc, remove & from XML file, using Notepad or Notepad++,
-or replace it with something else like "*" or " ".
 First column in spreadsheet program (Calc or Excel) could be wide. Right click on the first 
 column header, and select "Column Width". Set it to 2.
 
@@ -121,7 +117,7 @@ Program supports utf8 in content.
 
 If not set, default delimiter is tab.
 If tsv selected as format type, delimiter is tab.
-when converting m3u to csv/tsv/xml default delimiter is tab.
+when converting m3u to csv/tsv default delimiter is tab.
 
 
 -changes in 2023-08-06-1
@@ -189,6 +185,11 @@ when converting m3u to csv/tsv/xml default delimiter is tab.
 
 -changes in v2023-08-27-3
  changed verification for #EXTINF: field.
+
+-changes in v2023-09-15-1
+ added option to replace special character when converting to and from xml (default: on) :
+ &lt; represents "<"; &gt; represents ">"; &amp; represents "&"; &apos; represents "'"; &quot; represents '"'
+
 
 
 --
