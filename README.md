@@ -1,5 +1,5 @@
 
-## csv edit v2023-09-15-1
+## csv edit v2023-10-04-1
 <code> <pre> 
 beta
 
@@ -73,6 +73,35 @@ start "" /wait csvEdit.exe import.file output.file. Example:
 start "" /wait csvEdit.exe 2.m3u 2.csv
 
 start "" /wait is to wait till the program completes conversion.
+
+
+
+
+sort by column using command line:
+by specifying column name, and using _ , case insensitive:
+convert a1.m3u8, sort by 'name' column and save as sortname_mynewlist.m3u. Destination filename has to start with 'sortname_' :
+start "" /wait csvEdit.exe  a1.m3u8 sortname_mynewlist.m3u
+
+convert a1.m3u8, sort by 8th column and save as sort8_test.m3u. Destination filename has to start with 'sort8_' :
+start "" /wait csvEdit.exe  a1.m3u8 sort8_test.m3u
+
+
+
+convert a1.m3u8 to sorturl_test.xml and sort by 'url' column, destination filename has to start with 'sorturl_' :
+start "" /wait csvEdit.exe  a1.m3u8 sorturl_test.xml
+
+Note that when converting back from xml to url, changing sort order makes no sense, 
+cause it will lose column titles, which were moved to top row. You can convert between xml and csv
+back and forth, if they were not previously converted from m3u.
+But not from some other format to m3u with sorting.
+
+If string between sort and _ can be converted to int, then it will be used as column number. 
+Otherwise, it will be use as column name. Column names only make sense on m3u lists.
+
+
+
+
+
 
 can also convert m3u list to folder with single m3u files, folder has to exist first, 
 or csv file is created:
@@ -191,6 +220,8 @@ when converting m3u to csv/tsv default delimiter is tab.
  added option to replace special character when converting to and from xml (default: on) :
  `&lt; represents "<"; &gt; represents ">"; &amp; represents "&"; &apos; represents "'"; &quot; represents '"' `
 
+-changes in 2023-10-04-1
+ added ability to sort table by column, when converting using command line.
 
 
 --
