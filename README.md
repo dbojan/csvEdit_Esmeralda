@@ -79,15 +79,18 @@ start "" /wait is to wait till the program completes conversion.
 
 sort by column using command line:
 by specifying column name, and using _ , case insensitive:
-convert a1.m3u8, sort by 'name' column and save as sortname_mynewlist.m3u. Destination filename has to start with 'sortname_' :
+convert a1.m3u8, sort by 'name' column and save as sortname_mynewlist.m3u. 
+Destination filename has to start with 'sortname_' :
 start "" /wait csvEdit.exe  a1.m3u8 sortname_mynewlist.m3u
 
-convert a1.m3u8, sort by 8th column and save as sort8_test.m3u. Destination filename has to start with 'sort8_' :
+convert a1.m3u8, sort by 8th column and save as sort8_test.m3u. 
+Destination filename has to start with 'sort8_' :
 start "" /wait csvEdit.exe  a1.m3u8 sort8_test.m3u
 
 
 
-convert a1.m3u8 to sorturl_test.xml and sort by 'url' column, destination filename has to start with 'sorturl_' :
+convert a1.m3u8 to sorturl_test.xml and sort by 'url' column, 
+destination filename has to start with 'sorturl_' :
 start "" /wait csvEdit.exe  a1.m3u8 sorturl_test.xml
 
 Note that when converting back from xml to url, changing sort order makes no sense, 
