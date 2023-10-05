@@ -224,6 +224,7 @@ when converting m3u to csv/tsv default delimiter is tab.
  `&lt; represents "<"; &gt; represents ">"; &amp; represents "&"; &apos; represents "'"; &quot; represents '"' `
 
 -changes in 2023-10-04-1
+ fixed sorting of results ascending, on the top of the table.
  added ability to sort table by column, when converting using command line.
 
 
