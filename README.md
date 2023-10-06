@@ -143,8 +143,9 @@ sort multiple files m3u, running from the csvedit folder:
 `    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"   `
 
 sort multiple files m3u, running from the files folder:
-`    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"   `
-
+```
+    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
+```
 
 ### playlist to folder conversion:
 can also convert m3u list to folder with single m3u files, folder has to exist first, 
