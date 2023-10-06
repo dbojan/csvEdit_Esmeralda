@@ -1,5 +1,5 @@
 
-## csv edit v2023-10-04-1
+# csv edit v2023-10-04-1
 <code> <pre> 
 beta
 
@@ -13,7 +13,8 @@ import: csv, tsv, m3u, m3u8  xml (Microsoft SpreadsheetML 2003), folder with m3u
 export: csv, tsv, m3u, m3u8, xml (Microsoft SpreadsheetML 2003), folder with m3u files
 
 
-Installing: right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.zip), select "Save Link As".
+## Installing: 
+right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.zip), select "Save Link As".
 Select save location. Extract zip file, run. 
 You can associate it with csv and tsv files.
 
@@ -28,7 +29,7 @@ play.bat is started when single testing channels. Double click on cell or press 
 Made in VB.net (profile4), using Sharpdevelop v.4.4
 
 
-M3U:
+## M3U:
 M3U editing is beta, you might wanna backup your m3u files to another location first.
 You can add column to m3u table, change its title to Comment,  and add comments in that column
 prefixed by #:
@@ -43,7 +44,26 @@ Dont add comment in the first row with #extm3u... line.
 It will be ignored/not saved, per m3u specification on Wikipedia, unless it is part of the
 1st cell/tag.
 
-Conversion notes:
+
+### XML:
+First column in spreadsheet program (Calc or Excel) could be wide. Right click on the first 
+column header, and select "Column Width". Set it to 2.
+
+
+
+### Creating of (m3u) filelist
+by drag and drop multiple files:
+drag and drop multiple (multimedia: mp3, avi, mp4 ...) files on the program, new m3u filelist will be created
+if you hold control, program will ask you for group title. By default this is VOD-LOCAL
+if you hold shift, regular file list will be created
+Note: if you have already new list open, hold shift/ctrl after clicking "yes" or "no"
+on asking to save file. Or just close list first (Menu: File/Close)
+
+To save an empty m3u list, set column names as you want, and add at least one row using
+'Modify' menu. Click on 'File/Save As' or 'File/Save'.
+
+
+## Conversion notes:
 m3u -> csv/tsv/xml: column names will be add as the top row, 
 in the displayed/saved csv/tsv/xml files.
 
@@ -53,21 +73,15 @@ all this will work, if the header title is not "Columnxx"
 
 Automatic detection of tags in m3u should work :)
 
-Creating of (m3u) filelist by drag and drop multiple files:
-drag and drop multiple (multimedia) files on the program, new m3u filelist will be created
-if you hold control, program will ask you for group title. By default this is VOD-LOCAL
-if you hold shift, regular file list will be created
-Note: if you have already new list open, hold shift/ctrl after clicking "yes" or "no"
-on asking to save file. Or just close list first (Menu: File/Close)
 
-To save an empty m3u list, set column names as you want, and add at least one row using
-'Modify' menu. Click on 'File/Save As' or 'File/Save'.
 
-XML:
-First column in spreadsheet program (Calc or Excel) could be wide. Right click on the first 
-column header, and select "Column Width". Set it to 2.
 
-Command line conversion:
+
+
+
+
+
+## Command line conversion:
 start "" /wait csvEdit.exe import.file output.file. Example:
 
 start "" /wait csvEdit.exe 2.m3u 2.csv
@@ -77,7 +91,7 @@ start "" /wait is to wait till the program completes conversion.
 
 
 
-sort by column using command line:
+### sort by column using command line:
 by specifying column name, and using _ , case insensitive:
 convert a1.m3u8, sort by 'name' column and save as sortname_mynewlist.m3u. 
 Destination filename has to start with 'sortname_' :
@@ -103,9 +117,25 @@ Otherwise, it will be use as column name. Column names only make sense on m3u li
 
 
 
+### conversion of multiple files
+using command line:
+if running from the csvedit folder, output files with format name.extension will be in csvedit folder:
+convert m3u to csv
+for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"
+
+if running from the files folder, output files will be in the files folder, 
+some files might be duplicated if intput extension is the same as the output extension:
+for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"
 
 
+sort multiple files m3u, running from the csvedit folder:
+for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"
 
+sort multiple files m3u, running from the files folder:
+for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
+
+
+### playlist to folder conversion:
 can also convert m3u list to folder with single m3u files, folder has to exist first, 
 or csv file is created:
 you can use it create single vod m3u files, only name url, and group title are preserved):
@@ -130,12 +160,13 @@ files will be always saved to LETTER FIRST, then series:
 singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
 
-can also convert path to m3u list (for example to create mp3 files playlist):
+### folder to playlist conversion
+can also convert path (folder) to m3u list (for example to create mp3 files playlist):
 url is path to file on the disk, name is filename without extension.
 start "" /wait csvEdit.exe d:\media\music    1.m3u
 
 
-Editing all kind of tables:
+## Editing all kind of tables:
 To remove a row:
  -select one or more cells in the row you wish to remove
  -in menu go to 'modify/remove rows'
@@ -153,7 +184,8 @@ If tsv selected as format type, delimiter is tab.
 when converting m3u to csv/tsv default delimiter is tab.
 
 
--changes in 2023-08-06-1
+### changes:
+ -changes in 2023-08-06-1
  -changed file saving to File.WriteAllText from My.Computer.FileSystem.WriteAllText , 
   so text is saved in utf8, not utf8-bom
  -changed add row numbers to add channel numbers
