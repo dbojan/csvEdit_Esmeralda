@@ -31,11 +31,15 @@ Made in VB.net (profile4), using Sharpdevelop v.4.4
 
 ## M3U:
 M3U editing is beta, you might wanna backup your m3u files to another location first.
+
+
+### Comments in m3u file:
 You can add column to m3u table, change its title to Comment,  and add comments in that column
 prefixed by #:
 
-Comment <--column title
+add new row, and rename its title to Comment.
 
+your comments in that column have to prefixed with #:
 #my comment in line 2
 #my comment in line 3
 
@@ -52,15 +56,22 @@ column header, and select "Column Width". Set it to 2.
 
 
 ### Creating of (m3u) filelist
-by drag and drop multiple files:
-drag and drop multiple (multimedia: mp3, avi, mp4 ...) files on the program, new m3u filelist will be created
-if you hold control, program will ask you for group title. By default this is VOD-LOCAL
-if you hold shift, regular file list will be created
-Note: if you have already new list open, hold shift/ctrl after clicking "yes" or "no"
-on asking to save file. Or just close list first (Menu: File/Close)
+This will create list of files, with some additional columns.
+
+You probably want to close open list in program first (file/close), or the program will 
+ask you to save table first.
+
+Creating of list by drag and drop multiple files:
+drag and drop multiple (multimedia: mp3, avi, mp4 ...) files on the program, new m3u filelist 
+will be created.
+if 'caps lock' key is on program will ask you for group title. By default this is VOD-LOCAL
+if 'scroll lock' key is on, regular file list will be created, with just path to filenames
 
 To save an empty m3u list, set column names as you want, and add at least one row using
 'Modify' menu. Click on 'File/Save As' or 'File/Save'.
+
+You can also drop single folder with files inside on program.
+If you drop single FILE on program, it will try to load it as a text file.
 
 
 ## Conversion notes:
@@ -117,8 +128,7 @@ Otherwise, it will be use as column name. Column names only make sense on m3u li
 
 
 
-### conversion of multiple files
-using command line:
+### conversion of multiple files using command line:
 if running from the csvedit folder, output files with format name.extension will be in csvedit folder:
 convert m3u to csv
 for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"
@@ -259,6 +269,10 @@ when converting m3u to csv/tsv default delimiter is tab.
  fixed sorting of results ascending, on the top of the table.
  added ability to sort table by column, when converting using command line.
 
+-changes in 2023-10-06-1
+ updated readme with info on multiple files conversion from command line.
+ switched from using 'shift' and 'ctrl' to 'scroll lock' and 'caps lock' for drag and drop list creation.
+ (cause shift and ctrl was already used for drag'n'drop open in new window)
 
 --
 dbojan.github.io
