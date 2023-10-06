@@ -1,5 +1,5 @@
 
-# csv edit v2023-10-06-1
+# csv edit v2023-10-06-2
 <code> <pre> 
 beta
 
@@ -64,8 +64,10 @@ ask you to save table first.
 Creating of list by drag and drop multiple files:
 drag and drop multiple (multimedia: mp3, avi, mp4 ...) files on the program, new m3u filelist 
 will be created.
-if 'caps lock' key is on program will ask you for group title. By default this is VOD-LOCAL
+if 'caps lock' key is on program will ask you for group title. By default this is VOD-LOCAL.
+
 if 'scroll lock' key is on, regular file list will be created, with just path to filenames
+You can save this list as with .tsv extension
 
 To save an empty m3u list, set column names as you want, and add at least one row using
 'Modify' menu. Click on 'File/Save As' or 'File/Save'.
@@ -274,6 +276,9 @@ when converting m3u to csv/tsv default delimiter is tab.
  updated readme with info on multiple files conversion from command line.
  switched from using 'shift' and 'ctrl' to 'scroll lock' and 'caps lock' for drag and drop list creation.
  (cause shift and ctrl was already used.)
+
+-changes in 2023-10-06-2
+ added option to disable/enable multiple dropped files on program. no filtering by default.
 
 --
 dbojan.github.io
