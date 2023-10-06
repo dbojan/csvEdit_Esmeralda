@@ -273,7 +273,7 @@ when converting m3u to csv/tsv default delimiter is tab.
 -changes in 2023-10-06-1
  updated readme with info on multiple files conversion from command line.
  switched from using 'shift' and 'ctrl' to 'scroll lock' and 'caps lock' for drag and drop list creation.
- (cause shift and ctrl was already used for drag'n'drop open in new window)
+ (cause shift and ctrl was already used.)
 
 --
 dbojan.github.io
