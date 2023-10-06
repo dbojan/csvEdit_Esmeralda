@@ -278,7 +278,7 @@ when converting m3u to csv/tsv default delimiter is tab.
  (cause shift and ctrl was already used.)
 
 -changes in 2023-10-06-2
- added option to disable/enable multiple dropped files on program. no filtering by default.
+ added option to disable/enable filtering of multiple dropped files on program. no filtering by default.
 
 --
 dbojan.github.io
