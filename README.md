@@ -1,5 +1,5 @@
 
-# csv edit v2023-10-04-1
+# csv edit v2023-10-06-1
 <code> <pre> 
 beta
 
@@ -122,6 +122,7 @@ Note that when converting back from xml to url, changing sort order makes no sen
 cause it will lose column titles, which were moved to top row. You can convert between xml and csv
 back and forth, if they were not previously converted from m3u.
 But not from some other format to m3u with sorting.
+You could, however, convert from some other format to m3u, and then sort m3u to new m3u file.
 
 If string between sort and _ can be converted to int, then it will be used as column number. 
 Otherwise, it will be use as column name. Column names only make sense on m3u lists.
@@ -131,18 +132,18 @@ Otherwise, it will be use as column name. Column names only make sense on m3u li
 ### conversion of multiple files using command line:
 if running from the csvedit folder, output files with format name.extension will be in csvedit folder:
 convert m3u to csv
-for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"
+`    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"   `
 
 if running from the files folder, output files will be in the files folder, 
 some files might be duplicated if intput extension is the same as the output extension:
-for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"
+`    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"   `
 
 
 sort multiple files m3u, running from the csvedit folder:
-for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"
+`    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"   `
 
 sort multiple files m3u, running from the files folder:
-for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
+`    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"   `
 
 
 ### playlist to folder conversion:
@@ -171,7 +172,7 @@ singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
 
 ### folder to playlist conversion
-can also convert path (folder) to m3u list (for example to create mp3 files playlist):
+you can also convert path (folder) to m3u list (for example to create mp3 files playlist):
 url is path to file on the disk, name is filename without extension.
 start "" /wait csvEdit.exe d:\media\music    1.m3u
 
