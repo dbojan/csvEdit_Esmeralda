@@ -1,5 +1,5 @@
 
-# csv edit v2023-10-06-2
+# csv edit v2023-10-08-1
 <code> <pre> 
 beta
 
@@ -279,6 +279,9 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 -changes in 2023-10-06-2
  added option to disable/enable filtering of multiple dropped files on program. no filtering by default.
+
+-changes in 2023-10-08-1
+ paste in single value multi-selected cells as prefix/suffix
 
 --
 dbojan.github.io
