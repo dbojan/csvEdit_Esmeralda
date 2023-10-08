@@ -281,7 +281,7 @@ when converting m3u to csv/tsv default delimiter is tab.
  added option to disable/enable filtering of multiple dropped files on program. no filtering by default.
 
 -changes in 2023-10-08-1
- paste in single value multi-selected cells as prefix/suffix
+ paste single value from memory as prefix/suffix, in the multi-selected cells 
 
 --
 dbojan.github.io
