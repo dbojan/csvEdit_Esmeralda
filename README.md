@@ -1,5 +1,5 @@
 
-# csv edit v2023-12-16-1
+# csv edit v2024-01-06-1
 <code> <pre> 
 beta
 
@@ -198,7 +198,11 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 
 ### changes:
- -changes in 2023-08-06-1
+-changes in 2024-01-06-1
+ -changed the way empty string/cancel is handled in 'change column title'
+
+
+-changes in 2023-08-06-1
  -changed file saving to File.WriteAllText from My.Computer.FileSystem.WriteAllText , 
   so text is saved in utf8, not utf8-bom
  -changed add row numbers to add channel numbers
