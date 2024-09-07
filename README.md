@@ -1,5 +1,5 @@
 
-# csv edit v2024-01-06-1
+# csv edit v2024-09-07-1
 <code> <pre> 
 beta
 
@@ -20,7 +20,7 @@ You can associate it with csv and tsv files.
 
 Settings are in the settings.txt in format:
 mpv=
-d:/apps/mpv/mpv.exe
+d:\apps\mpv\mpv.exe
 
 Edit if needed to change mpv and ffprobe location.
 play.bat is started when single testing channels. Double click on cell or press f1
@@ -198,6 +198,12 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 
 ### changes:
+
+-changes in 2024-09-07-1
+ changed menus in file section.
+ added 'empty.txt'. Don't save over it.
+
+
 -changes in 2024-01-06-1
  -changed the way empty string/cancel is handled in 'change column title'
 
