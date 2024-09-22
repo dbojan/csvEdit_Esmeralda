@@ -31,6 +31,8 @@ Made in VB.net (profile4), using Sharpdevelop v.4.4
 
 ## M3U:
 M3U editing is beta, you might wanna backup your m3u files to another location first.
+Note that m3u list editing does not support more than 1 #extvlcopts in a single channel section.
+So, for now, you cannot have both user agent, and referrer.
 
 
 ### Comments in m3u file:
