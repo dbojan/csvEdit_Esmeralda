@@ -208,8 +208,6 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 -changes in 2024-09-29-1
  change color of 'mark rows temporarily'
- fixed loading of multiple extvlcopt, sort of, needs more work, empty line?
- ***not published yet, just copied to onedrive
 
 -changes in 2024-09-08-1
  added 'search and replace in selected cells'
