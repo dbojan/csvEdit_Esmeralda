@@ -34,8 +34,9 @@ M3U editing is beta, you might wanna backup your m3u files to another location f
 
 
 ### Comments in m3u file:
-You can add column to m3u table, change its title to Comment,  and add comments in that column
-prefixed by #:
+You can add column to m3u table, change its title to Comment, and add comments in that column
+prefixed by #,
+One comment (column) per row, spaces allowed obviously, within that cell:
 
 add new row, and rename its title to Comment.
 
