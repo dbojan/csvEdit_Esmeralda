@@ -31,9 +31,6 @@ Made in VB.net (profile4), using Sharpdevelop v.4.4
 
 ## M3U:
 M3U editing is beta, you might wanna backup your m3u files to another location first.
-Note that m3u list editing does not support more than 1 #extvlcopts in a single channel section.
-Because when converting to columns, two columns cannot have the same name.
-So, for now, you cannot have both user agent, and referrer as #extvlcopts.
 
 
 ### Comments in m3u file:
@@ -207,7 +204,7 @@ when converting m3u to csv/tsv default delimiter is tab.
  todo: maybe add 'do not use --no-config' for mpv
 
 -changes 2024-10-06-1
-added support for referrer and agent in doubleclick (#extvlcopt) for mpv. 
+added support for referrer and 'user agent' in doubleclick (#extvlcopt) for mpv. 
 not yet for testing channels using ffprobe 
 (ffprobe does use 'user agent=ffprobe')
 
