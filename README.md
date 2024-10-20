@@ -207,7 +207,7 @@ when converting m3u to csv/tsv default delimiter is tab.
  todo: maybe add 'do not use --no-config' for mpv
 
 -changes 2024-10-06-1
-added support for referer and agent in doubleclick (#extvlcopt) for mpv. 
+added support for referrer and agent in doubleclick (#extvlcopt) for mpv. 
 not yet for testing channels using ffprobe 
 (ffprobe does use 'user agent=ffprobe')
 
