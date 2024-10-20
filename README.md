@@ -1,5 +1,5 @@
 
-# csv edit 2024-10-05-1
+# csv edit 2024-10-20-1
 <code> <pre> 
 beta
 
@@ -202,9 +202,18 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 ### changes:
 
+-changes in 2021-10-20-1
+ set 'ctrl h' for search and replace (in selected cells)
+ todo: maybe add 'do not use --no-config' for mpv
+
+-changes 2024-10-06-1
+added support for referer and agent in doubleclick (#extvlcopt) for mpv. 
+not yet for testing channels using ffprobe 
+(ffprobe does use 'user agent=ffprobe')
+
 -changes in 2024-10-05-1
- added cancel to yes/no/cancel dialog
- added support for multiple #extvlcopt tags in m3u file
+ added cancel to yes/no/cancel dialog after change in table
+ added support for multiple #extvlcopt tags in single channel, in m3u file
 
 -changes in 2024-09-29-1
  change color of 'mark rows temporarily'
