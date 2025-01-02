@@ -205,7 +205,7 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 -changes in 2025-01-02-1
  added support for multiple kodiprop tags
- (you might want to recheck Comment columns (starting with "#") with comma (",") in it)
+ (you might want to recheck Comment columns (starting with "#") with : in it)
  todo add extvlcopts and kodiprop to checking validity of urls.
  todo find desktop player that supports kodiprop tags
 
