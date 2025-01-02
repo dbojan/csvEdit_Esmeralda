@@ -1,5 +1,5 @@
 
-# csv edit 2024-10-20-1
+# csv edit 2025-01-02-1
 <code> <pre> 
 beta
 
@@ -200,13 +200,18 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 ### changes:
 
--changes in 2021-10-20-1
+-changes in 2025-01-02-1
+ added support for multiple kodiprop tags
+ todo add extvlcopts and kodiprop to checking validity of urls.
+ todo find desktop player that supports kodiprop tags
+
+-changes in 2024-10-20-1
  set 'ctrl h' for search and replace (in selected cells)
  todo: maybe add 'do not use --no-config' for mpv
 
 -changes 2024-10-06-1
-added support for referrer and 'user agent' in doubleclick (#extvlcopt) for mpv. 
-not yet for testing channels using ffprobe 
+ added support for referrer and 'user agent' in doubleclick (#extvlcopt) for mpv. 
+ not yet for testing channels using ffprobe 
 (ffprobe does use 'user agent=ffprobe')
 
 -changes in 2024-10-05-1
