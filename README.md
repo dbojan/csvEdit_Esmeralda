@@ -1,5 +1,5 @@
 
-# csv edit 2025-01-02-1
+# csv edit 2025-01-02-2
 <code> <pre> 
 beta
 
@@ -199,6 +199,9 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 
 ### changes:
+
+-changes in 2025-01-02-2
+ bugfixes
 
 -changes in 2025-01-02-1
  added support for multiple kodiprop tags
