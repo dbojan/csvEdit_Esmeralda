@@ -200,6 +200,10 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 ### changes:
 
+-changes in 2025-01-04-1
+ can't recommended using # as comment, perhaps better to use #EXTINFcomment instead ..
+ bugfixes
+
 -changes in 2025-01-02-2
  bugfixes
 
