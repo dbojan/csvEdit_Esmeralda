@@ -201,8 +201,9 @@ when converting m3u to csv/tsv default delimiter is tab.
 -changes in 2025-01-09-1
 added extvlcopts and kodiprop to checking validity of urls
 changed player to mpv, put mpv.exe and mpv.com in csv.exe folder.
+ mpv.com is optional.
  double click will open channel with mpv.exe. In program folder also play.bat will be created, 
- with mpv.com, which gives more info on errors.
+ with mpv.com (if it exists), which gives more info on errors.
  You can use browser extensions to find channel info.
  Note that windows players sometimes have problems with audio/video sync of encrypted channels.
  On android use players: ott, sparkle or tivimate.
