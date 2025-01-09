@@ -43,9 +43,7 @@ M3U editing is beta, you might wanna backup your m3u files to another location f
 You can add column to m3u table, change its title to Comment, and add comments in that column
 prefixed by #,
 One comment (column) per row, spaces allowed obviously, within that cell:
-
 add new row, and rename its title to Comment.
-
 your comments in that column have to prefixed with #:
 #my comment in line
 
@@ -58,8 +56,6 @@ It will be ignored/not saved, per m3u specification on Wikipedia, unless it is p
 ### XML:
 First column in spreadsheet program (Calc or Excel) could be wide. Right click on the first 
 column header, and select "Column Width". Set it to 2.
-
-
 
 ### Creating of (m3u) filelist
 This will create list of files, with some additional columns.
@@ -94,7 +90,8 @@ Automatic detection of tags in m3u should work :)
 
 
 ## Command line conversion:
-start "" /wait csvEdit.exe import.file output.file. Example:
+start "" /wait csvEdit.exe import.file output.file. 
+Example:
 
 start "" /wait csvEdit.exe 2.m3u 2.csv
 
@@ -137,7 +134,7 @@ for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"
 
 if running from the files folder, output files will be in the files folder, 
 some files might be duplicated if intput extension is the same as the output extension:
-for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"
+for %i in (*.m3u*) do start "" /wait "F:\app\csvEdit.exe" "%i"  "%~nxi.tsv"
 
 
 sort multiple files m3u, running from the csvedit folder:
@@ -145,7 +142,7 @@ for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted
 
 sort multiple files m3u, running from the files folder:
 
-for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
+for %i in (*.m3u*) do start "" /wait "F:\app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
 
 ### playlist to folder conversion:
 can also convert m3u list to folder with single m3u files, folder has to exist first, 
