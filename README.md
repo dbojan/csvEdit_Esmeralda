@@ -18,7 +18,8 @@ right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.
 Select save location. Extract zip file, run. 
 You can associate it with csv and tsv files.
 
-You need mpv.exe and optionally mpv.com from https://mpv.io/ . Put exe and or com files in the same dir as csvedit.exe.
+To check channels, you need mpv.exe and optionally mpv.com from https://mpv.io/
+Put exe and or com files in the same dir as csvedit.exe.
 (For older windows, latest version that will work can be found here: https://www.videohelp.com/software/mpv-media-player/old-versions
 Either one of these (direct link to the file):
 https://www.videohelp.com/download/mpv-0.39.0-x86_64.7z
@@ -117,7 +118,8 @@ destination filename has to start with 'sorturl_' :
 start "" /wait csvEdit.exe  a1.m3u8 sorturl_test.xml
 
 Note that when converting back from xml to url, changing sort order makes no sense, 
-cause it will lose column titles, which were moved to top row. You can convert between xml and csv
+cause it will lose column titles, which were moved to top row.
+You can convert between xml and csv
 back and forth, if they were not previously converted from m3u.
 But not from some other format to m3u with sorting.
 You could, however, convert from some other format to m3u, and then sort m3u to new m3u file.
@@ -128,8 +130,8 @@ Otherwise, it will be use as column name. Column names only make sense on m3u li
 
 
 ### conversion of multiple files using command line:
-if running from the csvedit folder, output files with format name.extension will be in csvedit folder:
-convert m3u to csv
+if running from the csvedit folder, output files with format name.extension will be in 
+csvedit folder. Convert m3u to csv:
 `    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"   `
 
 if running from the files folder, output files will be in the files folder, 
@@ -154,17 +156,17 @@ start "" /wait csvEdit.exe 1.m3u d:\media\vodfiles
 
 if destination folder is named singles, each file will be saved to folder starting with the 
 letter of the file:
-start "" /wait csvEdit.exe 1.m3u d:\media\singles
+`start "" /wait csvEdit.exe 1.m3u d:\media\singles`
 abba in folder singles\a, bryan in folder singles\b ...
 
 if destination folder is named series, each file will be saved to folder of the series:
-start "" /wait csvEdit.exe 1.m3u d:\media\series
+`start "" /wait csvEdit.exe 1.m3u d:\media\series`
 jack.s01e01,jack.s02e05 will be saved to folder series\jack, marty.s01e03,marty.s02e05 
 to folder series\marty ...
 
 
 you can use those together
-start "" /wait csvEdit.exe 1.m3u d:\media\singles+series or start "" /wait csvEdit.exe 1.m3u d:\media\series+singles
+`start "" /wait csvEdit.exe 1.m3u d:\media\singles+series or start "" /wait csvEdit.exe 1.m3u d:\media\series+singles`
 files will be always saved to LETTER FIRST, then series: 
 singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
@@ -172,7 +174,7 @@ singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 ### folder to playlist conversion
 you can also convert path (folder) to m3u list (for example to create mp3 files playlist):
 url is path to file on the disk, name is filename without extension.
-start "" /wait csvEdit.exe d:\media\music    1.m3u
+`start "" /wait csvEdit.exe d:\media\music    1.m3u`
 
 
 ## Editing all kind of tables:
@@ -198,7 +200,8 @@ when converting m3u to csv/tsv default delimiter is tab.
 -changes in 2025-01-09-1
 added extvlcopts and kodiprop to checking validity of urls
 changed player to mpv, put mpv.exe and mpv.com in csv.exe folder.
- double click will open channel with mpv.exe. In program folder also play.bat will be created, with mpv.com, which gives more info on errors.
+ double click will open channel with mpv.exe. In program folder also play.bat will be created, 
+ with mpv.com, which gives more info on errors.
  You can use browser extensions to find channel info.
  Note that windows players sometimes have problems with audio/video sync of encrypted channels.
  On android use players: ott, sparkle or tivimate.
