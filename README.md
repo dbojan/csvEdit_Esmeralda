@@ -164,7 +164,9 @@ to folder series\marty ...
 
 
 you can use those together
-start "" /wait csvEdit.exe 1.m3u d:\media\singles+series or start "" /wait csvEdit.exe 1.m3u d:\media\series+singles
+start "" /wait csvEdit.exe 1.m3u d:\media\singles+series
+or 
+start "" /wait csvEdit.exe 1.m3u d:\media\series+singles
 files will be always saved to LETTER FIRST, then series: 
 singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
@@ -184,7 +186,8 @@ Same goes for column. Don't click on column title, unless you want to sort it.
 
 To select multiple cells/rows, use CTRL key. For adjacent use SHIFT. You can mix them.
 
-You can also select full row(s) for deletion, and click on delete key, or use 'remove rows' option.
+You can also select full row(s) for deletion, and click on delete key, 
+or use 'remove rows' option.
 
 Program supports utf8 in content.
 
