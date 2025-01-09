@@ -30,7 +30,8 @@ https://www.videohelp.com/download/mpv-x86_64-20240922-git-71f2220.7z
 This one and newer will NOT work.
 https://www.videohelp.com/download/mpv-x86_64-20240929-git-c3d9243.7z)
 
-play.bat is also created when single testing channels. Double click on cell or press f1
+Double click on cell or press f1
+(play.bat is also created when single testing channels)
 
 Made in VB.net (profile4), using Sharpdevelop v.4.4
 
