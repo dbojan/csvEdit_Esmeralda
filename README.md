@@ -20,7 +20,8 @@ You can associate it with csv and tsv files.
 
 To check channels, you need mpv.exe and optionally mpv.com from https://mpv.io/
 Put exe and or com files in the same dir as csvedit.exe.
-(For older windows, latest version that will work can be found here: https://www.videohelp.com/software/mpv-media-player/old-versions
+(For older windows, latest version that will work can be found here: 
+https://www.videohelp.com/software/mpv-media-player/old-versions
 Either one of these (direct link to the file):
 https://www.videohelp.com/download/mpv-0.39.0-x86_64.7z
 https://www.videohelp.com/download/mpv-0.39.0-x86_64-v3.7z
@@ -132,20 +133,20 @@ Otherwise, it will be use as column name. Column names only make sense on m3u li
 ### conversion of multiple files using command line:
 if running from the csvedit folder, output files with format name.extension will be in 
 csvedit folder. Convert m3u to csv:
-`    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"   `
+for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "%~nxi.tsv"
 
 if running from the files folder, output files will be in the files folder, 
 some files might be duplicated if intput extension is the same as the output extension:
-`    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"   `
+for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "%~nxi.tsv"
 
 
 sort multiple files m3u, running from the csvedit folder:
-`    for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"   `
+for %i in ("F:\tmp\*.m3u*") do start "" /wait csvEdit.exe "%i"  "sortname_sorted-%~nxi.m3u"
 
 sort multiple files m3u, running from the files folder:
-```
-    for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
-```
+
+for %i in (*.m3u*) do start "" /wait "F:\Desktop\csvedit-app\csvEdit.exe" "%i"  "sortname_sorted-%~nxi.m3u"
+
 ### playlist to folder conversion:
 can also convert m3u list to folder with single m3u files, folder has to exist first, 
 or csv file is created:
@@ -156,17 +157,17 @@ start "" /wait csvEdit.exe 1.m3u d:\media\vodfiles
 
 if destination folder is named singles, each file will be saved to folder starting with the 
 letter of the file:
-`start "" /wait csvEdit.exe 1.m3u d:\media\singles`
+start "" /wait csvEdit.exe 1.m3u d:\media\singles
 abba in folder singles\a, bryan in folder singles\b ...
 
 if destination folder is named series, each file will be saved to folder of the series:
-`start "" /wait csvEdit.exe 1.m3u d:\media\series`
+start "" /wait csvEdit.exe 1.m3u d:\media\series
 jack.s01e01,jack.s02e05 will be saved to folder series\jack, marty.s01e03,marty.s02e05 
 to folder series\marty ...
 
 
 you can use those together
-`start "" /wait csvEdit.exe 1.m3u d:\media\singles+series or start "" /wait csvEdit.exe 1.m3u d:\media\series+singles`
+start "" /wait csvEdit.exe 1.m3u d:\media\singles+series or start "" /wait csvEdit.exe 1.m3u d:\media\series+singles
 files will be always saved to LETTER FIRST, then series: 
 singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 
@@ -174,7 +175,7 @@ singles+series/j/jack/jack.s01e03.. or series+singles/j/jack/jack.s01e03
 ### folder to playlist conversion
 you can also convert path (folder) to m3u list (for example to create mp3 files playlist):
 url is path to file on the disk, name is filename without extension.
-`start "" /wait csvEdit.exe d:\media\music    1.m3u`
+start "" /wait csvEdit.exe d:\media\music    1.m3u
 
 
 ## Editing all kind of tables:
