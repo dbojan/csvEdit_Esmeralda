@@ -1,5 +1,5 @@
 
-# csv edit 2025-01-04-1
+# csv edit 2025-01-09-1
 <code> <pre> 
 beta
 
@@ -18,13 +18,17 @@ right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.
 Select save location. Extract zip file, run. 
 You can associate it with csv and tsv files.
 
-Settings are in the settings.txt in format:
-mpv=
-d:\apps\mpv\mpv.exe
+You need mpv.exe and optionally mpv.com from mpv.io. Put exe and or com files in the same dir as csvedit.exe.
+(For older windows, latest version that will work can be found here: https://www.videohelp.com/software/mpv-media-player/old-versions
+Either one of these (direct link to the file):
+https://www.videohelp.com/download/mpv-0.39.0-x86_64.7z
+https://www.videohelp.com/download/mpv-0.39.0-x86_64-v3.7z
+https://www.videohelp.com/download/mpv-x86_64-20240922-git-71f2220.7z
 
-Edit if needed to change mpv and ffprobe location.
-play.bat is started when single testing channels. Double click on cell or press f1
+This one and newer will NOT work.
+https://www.videohelp.com/download/mpv-x86_64-20240929-git-c3d9243.7z)
 
+play.bat is also created when single testing channels. Double click on cell or press f1
 
 Made in VB.net (profile4), using Sharpdevelop v.4.4
 
@@ -41,8 +45,7 @@ One comment (column) per row, spaces allowed obviously, within that cell:
 add new row, and rename its title to Comment.
 
 your comments in that column have to prefixed with #:
-#my comment in line 2
-#my comment in line 3
+#my comment in line
 
 It will be saved with the rest of the table in m3u file.
 Dont add comment in the first row with #extm3u... line.
@@ -88,20 +91,12 @@ all this will work, if the header title is not "Columnxx"
 Automatic detection of tags in m3u should work :)
 
 
-
-
-
-
-
-
-
 ## Command line conversion:
 start "" /wait csvEdit.exe import.file output.file. Example:
 
 start "" /wait csvEdit.exe 2.m3u 2.csv
 
 start "" /wait is to wait till the program completes conversion.
-
 
 
 
@@ -199,6 +194,15 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 
 ### changes:
+
+-changes in 2025-01-09-1
+added extvlcopts and kodiprop to checking validity of urls
+changed player to mpv, put mpv.exe and mpv.com in csv.exe folder.
+ double click will open channel with mpv.exe. In program folder also play.bat will be created, with mpv.com, which gives more info on errors.
+ You can use browser extensions to find channel info.
+ Note that windows players sometimes have problems with audio/video sync of encrypted channels.
+ On android use players: ott, sparkle or tivimate.
+ You have to have key for encrypted channels.
 
 -changes in 2025-01-04-1
  can't recommended using # as comment, perhaps better to use #EXTINFcomment instead ..
