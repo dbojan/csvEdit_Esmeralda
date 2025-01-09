@@ -18,7 +18,7 @@ right click [here](https://github.com/dbojan/csvEdit_Esmeralda/raw/main/csvEdit.
 Select save location. Extract zip file, run. 
 You can associate it with csv and tsv files.
 
-You need mpv.exe and optionally mpv.com from mpv.io. Put exe and or com files in the same dir as csvedit.exe.
+You need mpv.exe and optionally mpv.com from https://mpv.io/ . Put exe and or com files in the same dir as csvedit.exe.
 (For older windows, latest version that will work can be found here: https://www.videohelp.com/software/mpv-media-player/old-versions
 Either one of these (direct link to the file):
 https://www.videohelp.com/download/mpv-0.39.0-x86_64.7z
