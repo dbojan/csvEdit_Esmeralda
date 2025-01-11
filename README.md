@@ -1,5 +1,5 @@
 
-# csv edit 2025-01-09-1
+# csv edit 2025-01-11-1
 <code> <pre> 
 beta
 
@@ -198,6 +198,12 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 
 ### changes:
+
+-changes in 2025-01-11-1
+ bugfixes
+ auto set agent for network is set to off by default
+ if set in the menu and the the table, the table value takes precedence
+ if set only in the menu, that menu value is used.
 
 -changes in 2025-01-09-1
 added extvlcopts and kodiprop to checking validity of urls
