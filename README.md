@@ -1,5 +1,5 @@
 
-# csv edit 2025-01-11-1
+# csv edit 2025-01-11-2
 <code> <pre> 
 beta
 
@@ -199,6 +199,9 @@ when converting m3u to csv/tsv default delimiter is tab.
 
 ### changes:
 
+-changes in 2025-01-11-2
+ bugfixes
+
 -changes in 2025-01-11-1
  bugfixes
  auto set agent for network is set to off by default
@@ -215,6 +218,8 @@ changed player to mpv, put mpv.exe and mpv.com in csv.exe folder.
  Note that windows players sometimes have problems with audio/video sync of encrypted channels.
  On android use players: ott, sparkle or tivimate.
  You have to have key for encrypted channels.
+ And checking for validity in encrypted channels probably will not be correct, 
+ since you will get gray screen.
 
 -changes in 2025-01-04-1
  can't recommended using # as comment, perhaps better to use #EXTINFcomment instead ..
