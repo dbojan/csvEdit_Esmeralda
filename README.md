@@ -197,6 +197,35 @@ If tsv selected as format type, delimiter is tab.
 when converting m3u to csv/tsv default delimiter is tab.
 
 
+## Encrypted channels:
+Browser plugins can give you info on encrypted streaming channels.  
+You have to have the key.  
+Example of encrypted channels in m3u list:  
+
+```
+#EXTINF:-1 , My Channel
+#EXTVLCOPT:http-user-agent=Android
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=11111111111111111111111111111111:22222222222222222222222222222222
+https://server/url.mpd
+```
+
+Players that play encrypted channels:
+ - windows: mpv, ffplay. Poorly. Windows players only use second part of the key: 222...  
+Untested: N_m3u8DL-RE, streamlink  
+ - android: sparkle, ott navigator, tivimate , xpola player (you have to enter url and key manually in the app)
+ - web: shaka-player
+
+ - mpv and ffplay use just the second part of the key  
+mpv example:  
+mpv --demuxer-lavf-o=cenc_decryption_key=22222222222222222222222222222222 https://server/url.mpd  
+
+ - ffplay example:  
+ffplay.exe https://server/url.mpd -cenc_decryption_key 22222222222222222222222222222222  
+
+
 ### changes:
 
 -changes in 2025-01-11-2
